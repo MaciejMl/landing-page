@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "test:html",
+			"problemMatcher": [],
+			"label": "npm: test:html",
+			"detail": "html-validate *.html",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "npm",
+			"script": "test",
+			"group": "test",
+			"problemMatcher": [],
+			"label": "npm: test",
+			"detail": "npm-run-all test:*"
+		},
+		{
+			"type": "npm",
+			"script": "watch",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: watch",
+			"detail": "npm-run-all build build-dev -p watch:*"
+		}
+	]
+}

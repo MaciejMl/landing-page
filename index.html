@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css"
+      integrity="sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Esteban&family=Source+Sans+Pro:wght@900&display=swap"
       rel="stylesheet"
     />
@@ -13,12 +20,12 @@
   </head>
   <body>
     <navi>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="title col-md-4">
+          <div class="title col-md-2 col-lg-4">
             <h4>Golden</h4>
           </div>
-          <div class="list col-md-8">
+          <div class="list col-md-10 col-lg-8">
             <ul>
               <li><a href="#">HOME</a></li>
               <li><a href="#">SERVICES</a></li>
@@ -32,10 +39,16 @@
     </navi>
 
     <header class="splash">
-      <div class="container">
+      <div class="splash-img">
+        <img
+          src="https://images.pexels.com/photos/3892372/pexels-photo-3892372.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          alt="splash"
+        />
+      </div>
+      <div class="container-fluid">
         <div class="row">
           <div class="col splash-inner">
-            <h2>Welcome To Our Studio!</h2>
+            <h3>Welcome To Our Studio!</h3>
             <h1>IT'S NICE TO MEET YOU</h1>
             <a href="#" class="btn">TELL ME MORE</a>
           </div>
@@ -44,12 +57,12 @@
     </header>
 
     <section class="services">
-      <h2>SERVICES</h2>
+      <h1>SERVICES</h1>
       <a>Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
       <div class="container">
         <div class="row">
           <div class="col-4">
-            <i></i>
+            <a><i class="fa-solid fa-landmark"></i></a>
             <h3>E-Commerce</h3>
             <a
               >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
@@ -58,7 +71,7 @@
           </div>
 
           <div class="col-4">
-            <i></i>
+            <a><i class="fa-solid fa-laptop-code"></i></a>
             <h3>Responsive Web</h3>
             <a
               >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
@@ -67,7 +80,7 @@
           </div>
 
           <div class="col-4">
-            <i></i>
+            <a><i class="fa-solid fa-unlock-keyhole"></i></a>
             <h3>Web Security</h3>
             <a
               >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus

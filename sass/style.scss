@@ -1,10 +1,10 @@
 /* Variables */
 $font-text: 'Esteban', serif;
 $font-header: 'Source Sans Pro', sans-serif;
+$color-main: rgba(255, 255, 255, 0.863);
+$color-text: rgb(29, 28, 28);
 
-/*.selector-for-some-widget {
-  box-sizing: content-box;
-}*/
+/* Global */
 
 *,
 *::before,
@@ -17,24 +17,32 @@ body {
   background: rgb(29, 28, 28);
   font-family: $font-text;
   font-size: 16px;
-  line-height: 1.7;
-  color: white;
+  line-height: 1.5;
+  color: $color-text;
 }
 
 section {
+  max-width: 85%;
+  margin: 0 auto;
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
+h1 {
+  font-family: $font-header;
+  font-size: 46px;
+  margin: 0;
+}
 /* Navigation */
 
 navi {
   position: absolute;
   background-color: transparent;
   padding: 24px 0;
-  width: 100%;
+  width: 80%;
   opacity: 80%;
   z-index: 100;
+  margin: 0 7.5%;
 }
 
 .list ul {
@@ -64,35 +72,50 @@ navi {
 
 .splash {
   position: relative;
-  max-height: 560px;
-  max-width: 1024px;
-  text-align: center;
+}
+
+.splash-img {
+  height: 700px;
+  max-width: 80%;
   margin: 0 auto;
-  background-image: url(https://images.pexels.com/photos/3892372/pexels-photo-3892372.jpeg?auto=compress&cs=tinysrgb&w=1600);
-  background-repeat: no-repeat;
-  background-size: 100%;
+}
+
+.splash-img img {
+  height: 700px;
+  width: 100%;
   object-fit: cover;
-  opacity: 80%;
+}
+
+.splash .container-fluid {
+  position: absolute;
+  top: 100px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .splash .row {
   height: 560px;
   align-items: center;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .splash-inner {
   height: 200px;
+  text-align: center;
 }
 
 .splash-inner h1 {
-  font-size: 56px;
+  font-size: 76px;
   font-family: $font-header;
   margin: 10px 0 30px 0;
+  color: white;
 }
 
-.splash-inner h2 {
+.splash-inner h3 {
   font-size: 30px;
   margin: 10px 0;
+  color: white;
 }
 
 .btn {
@@ -104,3 +127,52 @@ navi {
   text-decoration: none;
   font-family: $font-header;
 }
+
+/* Services */
+
+.services {
+  background: $color-main;
+  max-width: 80%;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.services h1,
+.services a {
+  display: block;
+  text-align: center;
+}
+
+.services a {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.services h3 {
+  font-size: 20px;
+  font-family: $font-header;
+  text-align: center;
+}
+
+.services i {
+  display: inline-block;
+  text-align: center;
+  font-size: 48px;
+  color: goldenrod;
+  border: 3px solid goldenrod;
+  width: 90px;
+  height: 90px;
+  padding: 15px 10px;
+  border-radius: 50%;
+}
+
+/*.services .row a:first-of-type {
+  border: 1px solid goldenrod;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+}
+*/

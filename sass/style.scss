@@ -22,7 +22,7 @@ body {
 }
 
 section {
-  max-width: 85%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 96px;
   padding-bottom: 96px;
@@ -35,18 +35,23 @@ h1 {
 }
 /* Navigation */
 
-navi {
+.navi {
   position: absolute;
   background-color: transparent;
   padding: 24px 0;
-  width: 80%;
+  width: 100%;
   opacity: 80%;
   z-index: 100;
-  margin: 0 7.5%;
+  margin: 0;
+}
+
+.list {
+  text-align: right;
 }
 
 .list ul {
-  text-align: center;
+  display: inline-block;
+  padding-left: 32px;
 }
 
 .list li {
@@ -76,7 +81,7 @@ navi {
 
 .splash-img {
   height: 700px;
-  max-width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -96,9 +101,9 @@ navi {
 .splash .row {
   height: 560px;
   align-items: center;
-  margin-right: 15%;
-  margin-left: 15%;
-  max-width: 85%;
+  //margin-right: 15%;
+  //margin-left: 15%;
+  //max-width: 85%;
 }
 
 .splash-inner {
@@ -133,11 +138,7 @@ navi {
 
 .services {
   background: $color-main;
-  max-width: 80%;
-}
-
-.container {
-  max-width: 70%;
+  width: 100%;
 }
 
 .services h1,
@@ -172,7 +173,7 @@ navi {
 /* Portfolio */
 
 .portfolio {
-  max-width: 80%;
+  width: 100%;
   background: rgb(233, 232, 232);
 }
 
@@ -220,7 +221,7 @@ navi {
 .footer {
   height: 120px;
   background-color: $color-main;
-  max-width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -275,10 +276,6 @@ footer ul li {
 }
 
 @media (max-width: 991px) {
-  .list {
-    display: none;
-  }
-
   .footer ul {
     text-align: center;
     margin: 0;
@@ -306,15 +303,32 @@ footer ul li {
   }
 }
 
-@media (min-width: 310px) and (max-width: 632px) {
+@media (min-width: 320px) and (max-width: 632px) {
   .splash .container-fluid,
   .splash-inner h1 {
     top: 0;
-    font-size: 26px;
+    font-size: 50px;
   }
 
   .btn {
     padding: 10px 20px;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .list {
+    order: -1;
+    text-align: center;
+  }
+
+  .title h4 {
+    font-size: 30px;
+  }
+
+  @media (max-width: 485px) {
+    .list a {
+      font-size: 12px;
+    }
   }
 }

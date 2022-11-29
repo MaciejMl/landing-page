@@ -96,8 +96,9 @@ navi {
 .splash .row {
   height: 560px;
   align-items: center;
-  margin-right: 0;
-  margin-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  max-width: 85%;
 }
 
 .splash-inner {
@@ -220,7 +221,7 @@ navi {
   height: 120px;
   background-color: $color-main;
   max-width: 80%;
-  margin: -1px auto;
+  margin: 0 auto;
 }
 
 footer ul li {
@@ -247,9 +248,73 @@ footer ul li {
 
 .footer ul {
   margin: 40px 0 40px 15px;
+  padding-left: 10px;
 }
 
-.footer .col-4 a {
+.footer .col-lg-4 a {
   display: block;
-  margin: 45px 0 45px 0;
+  margin: 40px 0 0 0;
+}
+
+/* media queries */
+
+@media (min-width: 992px) and (max-width: 1102px) {
+  .portfolio h3 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  .services h3 {
+    font-size: 16px;
+  }
+
+  .services .row a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .list {
+    display: none;
+  }
+
+  .footer ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer .col-lg-4 a {
+    text-align: center;
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media (max-width: 434px) {
+  .footer .col-lg-4 a {
+    margin: 5px 0;
+    font-size: 12px;
+  }
+
+  .footer .col-lg-8 {
+    display: none;
+  }
+
+  .footer .col-lg-4 {
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 310px) and (max-width: 632px) {
+  .splash .container-fluid,
+  .splash-inner h1 {
+    top: 0;
+    font-size: 26px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
 }
